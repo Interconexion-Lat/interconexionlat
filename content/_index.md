@@ -1,0 +1,11 @@
+---
+organizations:
+  - Proyecto sobre Organización, Desarrollo, Educación e Investigación (PODER)
+  - Datasketch
+  - SocialTIC 
+  - ILDA
+  - CDS
+  - Fundación Ciudadanía y Desarrollo
+  - Cargografias
+  - Codeando México
+---
