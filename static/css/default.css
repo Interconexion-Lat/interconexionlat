@@ -1,0 +1,31 @@
+.md-content > * {
+  margin-bottom: 1.5rem;
+}
+
+.md-content ol,
+.md-content ul {
+  padding-left: 1.5rem;
+}
+
+.md-content ol {
+  list-style-type: decimal;
+}
+
+.md-content ul {
+  list-style-type: disc;
+}
+
+.md-content li {
+  margin-bottom: 1rem;
+}
+
+.md-content h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .md-content h2 {
+    font-size: 1.5rem;
+  }
+}

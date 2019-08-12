@@ -3,27 +3,7 @@
     <h1 class="text-4xl md:text-6xl text-gray-900">Interconexión.lat:</h1>
     <h2 class="text-xl md:text-3xl text-gray-700">Decálogo por la interconexión latinoamericana de datos</h2>
   </div>
-  <div class="text-gray-900 mt-10 md:mt-16 text-base md:text-lg leading-relaxed">
-    <p>Después de diez años de trabajo en la agenda de datos, vemos una sociedad civil fuerte y dinámica que trabaja con datos, pero aún continúan los graves problemas en la región como la captura del estado por parte de las élites, los casos de corrupción regionales y la falta de transparencia en la gestión pública.</p>
-    <p class="mt-6">Vemos a la sociedad civil como un garante de la rendición de cuentas cada vez más importante, y creemos que para ser más efectivos hemos de pensar y ejecutar nuestros proyectos de datos como nodos de una red regional descentralizada.</p>
-    <p class="mt-6">Para iniciar el diálogo lanzamos este primer decálogo que esperamos poder discutir, priorizar y asumir compromisos concretos en el marco de Abrelatam 2019.</p>
-    <ol class="mt-6 list-decimal pl-6">
-      <li class="mb-4">Todos los datos y metadatos serán compartidos para su uso (al menos) dentro la red.</li>
-      <li class="mb-4">Siempre se publicarán los datos con una licencia abierta.</li>
-      <li class="mb-4">Cada uno de los datos debe estar basado en al menos una fuente verificada e incluir la fecha y frecuencia de actualización.</li>
-      <li class="mb-4">Se utilizarán soluciones de intercambio de datos que seguirán tanto estándares internacionales o adaptaciones con acuerdos regionales.</li>
-      <li class="mb-4">La definición de estándares y protocolos se hará dando prioridad a la interconexión de proyectos existentes.</li>
-      <li class="mb-4">Los conjuntos de datos documentarán de forma abierta y replicable los procesos de obtención, limpieza y reestructuración a los que han sido sometidos. Se incorporarán prácticas de investigación reproducible.</li>
-      <li class="mb-4">Cuando los datos sean procesados, generados o reinterpetados a partir de algoritmos, aprendizaje automático o inteligencia artificial deberán compartir los datos de entrenamiento y  pruebas, estimación de error y explicitar objetivos, metodologías y sesgos detectados.</li>
-      <li class="mb-4">Se potenciará el uso y desarrollo de software libre y la reutilización de forma simple del mismo</li>
-      <li class="mb-4">Los nuevos proyectos de análisis, obtención o visualización de datos estarán basados en los estándares consensuados en Interconexion.lat</li>
-      <li class="mb-4">Siempre se buscará la colaboración en la realización de proyectos y la socialización de impactos y aprendizajes de los mismos.</li>
-    </ol>
-    <h3 class="mt-6 font-semibold text-lg md:text-2xl">Organizaciones firmantes</h3>
-    <ul class="list-disc pl-6 mt-6">
-      {{ range .Params.organizations }}
-        <li class="mb-4">{{ . }}</li>
-      {{ end }}
-    </ul>
+  <div class="text-gray-900 mt-10 md:mt-16 text-base md:text-lg leading-relaxed md-content">
+    {{ .Content }}
   </div>
 {{ end }}
