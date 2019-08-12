@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "//interconexion-lat.github.io/web"
 languageCode = "en-us"
 title = "Interconexión.lat"
 publishDir = "docs"
