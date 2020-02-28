@@ -1,9 +1,51 @@
 {{ define "main" }}
-  <div class="leading-tight mt-20 pb-4 border-b">
-    <h1 class="text-4xl md:text-6xl text-gray-900"><img src="/web/img/interconexion-logo.jpg" alt="Interconexión.lat" id="header-logo"></h1>
-    <h2 class="text-xl md:text-3xl text-gray-700">Decálogo por la interconexión latinoamericana de datos</h2>
+  <div id="quienes-somos" class="section">
+    <div class="title">
+      <h1>Quiénes somos</h1>
+    </div>
+    <div class="paragraph">
+      {{.Params.quienes_somos}}
+    </div>
+    <div class="title">
+      <h2>Organizaciones firmantes</h2>
+    </div>
+    <div class="logos-container">
+      <div id="poder" class="logo">
+        <img src="/web/img/logos/poder.png" alt="Logo de PODER">
+      </div>
+      <div id="codeando" class="logo">
+        <img src="/web/img/logos/codeando.png" alt="Logo de Codeando México">
+      </div>
+    </div>
+    <div class="paragraph">
+      Proyecto sobre Organización, Desarrollo, Educación e Investigación (PODER)
+      Datasketch
+      Codeando México
+      SocialTIC
+      ILDA
+      CDS
+      Fundación Ciudadanía y Desarrollo
+      Cargografías
+    </div>
   </div>
-  <div class="text-gray-900 mt-10 md:mt-16 text-base md:text-lg leading-relaxed md-content">
-    {{ .Content }}
+  <div id="decalogo" class="section">
+    <div class="title">
+      <h1>Decálogo</h1>
+    </div>
+    <div class="paragraph">
+      {{.Params.decalogo}}
+      {{.Content}}
+    </div>
+  </div>
+  <div id="primer-informe" class="section">
+    <div class="title">
+      <h1>Primer informe de evaluación</h1>
+    </div>
+    <div class="paragraph">
+      {{.Params.informe}}
+    </div>
+    <div class="button-container">
+      <a href="#" class="button">Ver informe</a>
+    </div>
   </div>
 {{ end }}

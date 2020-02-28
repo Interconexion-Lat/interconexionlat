@@ -5,14 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ .Site.Title }}</title>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href='{{ "css/reset.css" | absURL }}'>
   <link rel="stylesheet" href='{{ "css/default.css" | absURL }}'>
+  <link rel="stylesheet" href='{{ "css/navbar.css" | absURL }}'>
 </head>
-<body class="min-h-screen bg-gray-100">
-  <main class="px-4">
-    <div class="w-full md:w-3/5 mx-auto">
+<body>
+  <nav class="navbar" x-data="{ open: false }" :class="{ 'active': open }">
+    <button id="menu" @click="open = !open">
+      <svg viewBox="0 0 20 20" fill="red">
+        <path x-show="open" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+        <path x-show="!open" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+    <img id="logo" src="/web/img/logo.svg" alt="Logo de Interconexión LATAM"/>
+    <div class="nav-links">
+      <a href="#quienes-somos" @click="open = false">Quiénes somos</a>
+      <a href="#decalogo" @click="open = false">Decálogo</a>
+      <a href="#primer-informe" @click="open = false">Primer informe</a>
+    </div>
+    <div class="box copyright">
+      <img class="icon" src="/web/img/cc1.svg" alt="CC icon"/>
+      <img class="icon" src="/web/img/cc2.svg" alt="BY icon"/>
+      <img class="icon" src="/web/img/cc3.svg" alt="SA icon"/>
+      <p>Todo el material en esta página, cuando no se indique lo contrario, es CC-BY-SA. Si reúsas o adaptas recursos de esta página por favor vincúlalos y referéncialos.</p>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="content">
       {{ block "main" . }}{{ end }}
     </div>
   </main>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 </body>
 </html>
