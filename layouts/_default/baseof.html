@@ -9,6 +9,7 @@
   <link rel="stylesheet" href='{{ "css/reset.css" | absURL }}'>
   <link rel="stylesheet" href='{{ "css/default.css" | absURL }}'>
   <link rel="stylesheet" href='{{ "css/navbar.css" | absURL }}'>
+  <link rel="stylesheet" href='{{ "css/blog.css" | absURL }}'>
 </head>
 <body x-data="{ open: false }" x-bind:class="{ 'noscroll': open }">
   <nav class="navbar"  x-bind:class="{ 'active': open }">
@@ -18,11 +19,12 @@
         <path x-show="!open" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
       </svg>
     </button>
-    <img id="logo" src="/img/logo.svg" alt="Logo de Interconexión LATAM"/>
+    <a href="/"><img id="logo" src="/img/logo.svg" alt="Logo de Interconexión LATAM"/></a>
     <div class="nav-links">
-      <a href="#quienes-somos" @click="open = false">Quiénes somos</a>
-      <a href="#decalogo" @click="open = false">Decálogo</a>
-      <a href="#primer-informe" @click="open = false">Primer informe</a>
+      <a href="/#quienes-somos" @click="open = false">Quiénes somos</a>
+      <a href="/#decalogo" @click="open = false">Decálogo</a>
+      <a href="/#primer-informe" @click="open = false">Primer informe</a>
+      <a href="/blog">Blog</a>
       <a href="/contacto">Contacto</a>
     </div>
     <div class="box copyright">

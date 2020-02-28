@@ -21,6 +21,8 @@ html, body {
 
 .content {
   padding: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: #f9f9f9;
 }
 
@@ -64,8 +66,26 @@ html, body {
 }
 
 .logo img {
-  width: 150px;
+  width: 200px;
   height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#poder img {
+  width: 150px;
+}
+
+#socialtic img {
+  width: 250px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#fundacion img {
+  width: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 ol li {
