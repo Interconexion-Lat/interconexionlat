@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interconexión.lat</title>
-    <link>/</link>
-    <description>Recent content on Interconexión.lat</description>
+    <title>Blog on Interconexión.lat</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on Interconexión.lat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2020 13:26:24 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 12:10:47 -0500</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
