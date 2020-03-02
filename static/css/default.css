@@ -13,6 +13,7 @@ html, body {
   background-color: #f9f9f9;
   margin-left: 50px;
   overflow-y: scroll;
+  min-height: 100%;
 }
 
 .noscroll {
