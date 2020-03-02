@@ -1,60 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.56.3" />
+	<meta name="generator" content="Hugo 0.53" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Interconexión.lat</title>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href='//interconexion-lat.github.io/web/css/default.css'>
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href='/css/reset.css'>
+  <link rel="stylesheet" href='/css/default.css'>
+  <link rel="stylesheet" href='/css/navbar.css'>
+  <link rel="stylesheet" href='/css/blog.css'>
 </head>
-<body class="min-h-screen bg-gray-100">
-  <main class="px-4">
-    <div class="w-full md:w-3/5 mx-auto">
+<body x-data="{ open: false }" x-bind:class="{ 'noscroll': open }">
+  <nav class="navbar"  x-bind:class="{ 'active': open }">
+    <button id="menu" @click="open = !open">
+      <svg viewBox="0 0 20 20" fill="red">
+        <path x-show="open" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+        <path x-show="!open" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+    <a href="/"><img id="logo" src="/img/logo.svg" alt="Logo de Interconexión LATAM"/></a>
+    <div class="nav-links">
+      <a href="/#quienes-somos" @click="open = false">Quiénes somos</a>
+      <a href="/#decalogo" @click="open = false">Decálogo</a>
+      <a href="/#primer-informe" @click="open = false">Primer informe</a>
+      <a href="/blog">Blog</a>
+      <a href="/contacto">Contacto</a>
+    </div>
+    <div class="box copyright">
+      <img class="icon" src="/img/cc1.svg" alt="CC icon"/>
+      <img class="icon" src="/img/cc2.svg" alt="BY icon"/>
+      <img class="icon" src="/img/cc3.svg" alt="SA icon"/>
+      <p>Todo el material en esta página, cuando no se indique lo contrario, es CC-BY-SA. Si reúsas o adaptas recursos de esta página por favor vincúlalos y referéncialos.</p>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="content">
       
-  <div class="leading-tight mt-20 pb-4 border-b">
-    <h1 class="text-4xl md:text-6xl text-gray-900">Interconexión.lat:</h1>
-    <h2 class="text-xl md:text-3xl text-gray-700">Decálogo por la interconexión latinoamericana de datos</h2>
+  <div id="quienes-somos" class="section">
+    <div class="title">
+      <h1>Quiénes somos</h1>
+    </div>
+    <div class="paragraph">
+      Interconexión.lat es una plataforma que impulsa el intercambio y co-producción de datos entre organizaciones de sociedad civil en América Latina para hacer frente a retos transfronterizos y hacer eficientes los esfuerzos de la región.
+    </div>
+    <div class="title">
+      <h2>Organizaciones firmantes</h2>
+    </div>
+    <div class="logos-container">
+      <div id="poder" class="logo">
+        <img src="/img/logos/poder.png" alt="Logo de PODER">
+      </div>
+      <div class="logo-group">
+        <div id="codeando" class="logo">
+          <img src="/img/logos/codeando.png" alt="Logo de Codeando México">
+        </div>
+        <div id="datasketch" class="logo">
+          <img src="/img/logos/datasketch.svg" alt="Logo de Datasketch">
+        </div>
+      </div>
+      <div class="logo-group">
+        <div id="socialtic" class="logo">
+          <img src="/img/logos/socialtic.png" alt="Logo de Social TIC">
+        </div>
+        <div id="fundacion" class="logo">
+          <img src="/img/logos/fundacion.png" alt="Logo de Fundación Ciudadanía y Desarrollo">
+        </div>
+      </div>
+    </div>
+    <div class="paragraph">
+      Proyecto sobre Organización, Desarrollo, Educación e Investigación (PODER), Datasketch, Codeando México, SocialTIC, ILDA, CDS, Fundación Ciudadanía y Desarrollo, Cargografías
+    </div>
   </div>
-  <div class="text-gray-900 mt-10 md:mt-16 text-base md:text-lg leading-relaxed md-content">
-    
-
-<p>Después de diez años de trabajo en la agenda de datos, vemos una sociedad civil fuerte y dinámica que trabaja con datos, pero aún continúan los graves problemas en la región como la captura del estado por parte de las élites, los casos de corrupción regionales y la falta de transparencia en la gestión pública.</p>
-
-<p>Vemos a la sociedad civil como un garante de la rendición de cuentas cada vez más importante, y creemos que para ser más efectivos hemos de pensar y ejecutar nuestros proyectos de datos como nodos de una red regional descentralizada.</p>
-
-<p>Para iniciar el diálogo lanzamos este primer decálogo que esperamos poder discutir, priorizar y asumir compromisos concretos en el marco de Abrelatam 2019.</p>
+  <div id="decalogo" class="section">
+    <div class="title">
+      <h1>Decálogo</h1>
+    </div>
+    <div class="paragraph">
+      
+      <p>Después de diez años de trabajo en la agenda de datos, vemos una sociedad civil fuerte y dinámica que trabaja con datos, pero aún continúan los graves problemas en la región como la captura del estado por parte de las élites, los casos de corrupción regionales y la falta de transparencia en la gestión pública. Vemos a la sociedad civil como un garante de la rendición de cuentas cada vez más importante, y creemos que para ser más efectivos hemos de pensar y ejecutar nuestros proyectos de datos como nodos de una red regional descentralizada. Para iniciar el diálogo lanzamos este primer decálogo que esperamos poder discutir, priorizar y asumir compromisos concretos en el marco de Abrelatam 2019.</p>
 
 <ol>
-<li><strong>Todos los datos y metadatos serán compartidos para su uso (al menos) dentro la red.</strong></li>
-<li><strong>Siempre se publicarán los datos con una licencia abierta.</strong></li>
-<li><strong>Cada uno de los datos debe estar basado en al menos una fuente verificada e incluir la fecha y frecuencia de actualización.</strong></li>
-<li><strong>Se utilizarán soluciones de intercambio de datos que seguirán tanto estándares internacionales o adaptaciones con acuerdos regionales.</strong></li>
-<li><strong>La definición de estándares y protocolos se hará dando prioridad a la interconexión de proyectos existentes.</strong></li>
-<li><strong>Los conjuntos de datos documentarán de forma abierta y replicable los procesos de obtención, limpieza y reestructuración a los que han sido sometidos. Se incorporarán prácticas de investigación reproducible.</strong></li>
-<li><strong>Cuando los datos sean procesados, generados o reinterpetados a partir de algoritmos, aprendizaje automático o inteligencia artificial deberán compartir los datos de entrenamiento y  pruebas, estimación de error y explicitar objetivos, metodologías y sesgos detectados.</strong></li>
-<li><strong>Se potenciará el uso y desarrollo de software libre y la reutilización de forma simple del mismo.</strong></li>
-<li><strong>Los nuevos proyectos de análisis, obtención o visualización de datos estarán basados en los estándares consensuados en Interconexion.lat.</strong></li>
-<li><strong>Siempre se buscará la colaboración en la realización de proyectos y la socialización de impactos y aprendizajes de los mismos.</strong></li>
+<li>Todos los datos y metadatos serán compartidos para su uso (al menos) dentro la red.</li>
+<li>Siempre se publicarán los datos con una licencia abierta.</li>
+<li>Cada uno de los datos debe estar basado en al menos una fuente verificada e incluir la fecha y frecuencia de actualización.</li>
+<li>Se utilizarán soluciones de intercambio de datos que seguirán tanto estándares internacionales o adaptaciones con acuerdos regionales.</li>
+<li>La definición de estándares y protocolos se hará dando prioridad a la interconexión de proyectos existentes.</li>
+<li>Los conjuntos de datos documentarán de forma abierta y replicable los procesos de obtención, limpieza y reestructuración a los que han sido sometidos. Se incorporarán prácticas de investigación reproducible.</li>
+<li>Cuando los datos sean procesados, generados o reinterpetados a partir de algoritmos, aprendizaje automático o inteligencia artificial deberán compartir los datos de entrenamiento y  pruebas, estimación de error y explicitar objetivos, metodologías y sesgos detectados.</li>
+<li>Se potenciará el uso y desarrollo de software libre y la reutilización de forma simple del mismo.</li>
+<li>Los nuevos proyectos de análisis, obtención o visualización de datos estarán basados en los estándares consensuados en Interconexion.lat.</li>
+<li>Siempre se buscará la colaboración en la realización de proyectos y la socialización de impactos y aprendizajes de los mismos.</li>
 </ol>
 
-<h2 id="organizaciones-firmantes">Organizaciones firmantes</h2>
-
-<ul>
-<li>Proyecto sobre Organización, Desarrollo, Educación e Investigación (PODER)</li>
-<li>Datasketch</li>
-<li>SocialTIC</li>
-<li>ILDA</li>
-<li>CDS</li>
-<li>Fundación Ciudadanía y Desarrollo</li>
-<li>Cargografias</li>
-<li>Codeando México</li>
-</ul>
-
+    </div>
+  </div>
+  <div id="primer-informe" class="section">
+    <div class="title">
+      <h1>Primer informe de evaluación</h1>
+    </div>
+    <div class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit integer nibh, nec sollicitudin cubilia ultricies nullam per at. At rhoncus mus dapibus ad tristique convallis orci sagittis leo, nam commodo cubilia conubia penatibus nascetur posuere dis sem, libero etiam vel massa aenean eleifend phasellus auctor.
+    </div>
+    <div class="button-container">
+      <a href="#" class="button">Ver informe</a>
+    </div>
   </div>
 
     </div>
   </main>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 </body>
 </html>

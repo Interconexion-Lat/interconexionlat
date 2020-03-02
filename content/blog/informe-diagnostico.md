@@ -1,8 +1,8 @@
 ---
-title: "Hola mundo"
+title: "Sobre el informe diagnóstico"
 date: 2020-02-28T13:26:24-05:00
 draft: false
-description: "Lorem ipsum dolor sit amet consectetur adipiscing elit integer nibh, nec sollicitudin cubilia ultricies nullam per at. At rhoncus mus dapibus ad tristique convallis orci sagittis leo, nam commodo cubilia conubia penatibus nascetur posuere dis sem, libero etiam vel massa aenean eleifend phasellus auctor."
+description: "Así se desarrolló el primer informe diagnóstico"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu dui. Tristique senectus et netus et malesuada. In egestas erat imperdiet sed euismod nisi porta. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Sed nisi lacus sed viverra tellus in hac. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Quam id leo in vitae turpis massa sed elementum tempus. Egestas maecenas pharetra convallis posuere. Blandit libero volutpat sed cras ornare arcu. Suspendisse in est ante in nibh mauris cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Libero enim sed faucibus turpis in eu mi. A lacus vestibulum sed arcu non odio. Dictum non consectetur a erat nam. Urna nunc id cursus metus aliquam. Massa tempor nec feugiat nisl pretium fusce id velit.

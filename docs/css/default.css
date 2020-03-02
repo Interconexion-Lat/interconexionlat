@@ -1,31 +1,116 @@
-.md-content > * {
-  margin-bottom: 1.5rem;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-.md-content ol,
-.md-content ul {
-  padding-left: 1.5rem;
+html, body {
+  font-family: 'Barlow';
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.md-content ol {
-  list-style-type: decimal;
+.container {
+  background-color: #f9f9f9;
+  margin-left: 50px;
+  overflow-y: scroll;
 }
 
-.md-content ul {
-  list-style-type: disc;
+.noscroll {
+  overflow: hidden;
 }
 
-.md-content li {
-  margin-bottom: 1rem;
+.content {
+  padding: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #f9f9f9;
 }
 
-.md-content h2 {
-  font-weight: 600;
-  font-size: 1.25rem;
+.title h1 {
+  font-weight: 800;
+  font-size: 48px;
+  color: #2a2a2a;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.8);
+}
+
+.title h2 {
+  font-weight: 800;
+  font-size: 22px;
+  color: #2a2a2a;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.8);
+}
+
+.paragraph {
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 30px;
+  max-width: 650px;
+  margin-bottom: 50px;
+  color: rgba(0,0,0,0.8);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 20px 20px 20px 0px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#poder img {
+  width: 150px;
+}
+
+#socialtic img {
+  width: 250px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#fundacion img {
+  width: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ol li {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+ol li::marker {
+  font-weight: 800;
+}
+
+.button {
+  color: #fff;
+  background-color: #f93640;
+  padding: 10px;
+  max-width: 100px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
-  .md-content h2 {
-    font-size: 1.5rem;
+  .container {
+    margin-left: 250px;
   }
 }

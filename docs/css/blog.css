@@ -1,0 +1,38 @@
+.blog .blog-item {
+  margin-top: 60px;
+}
+
+.blog .blog-item .title {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.8);
+}
+
+.blog .title h1 {
+  margin-bottom: 0px;
+}
+
+.blog .date {
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.5);
+}
+
+.blog .paragraph {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.blog .blog-item .button {
+  margin-bottom: 30px;
+}
+
+.blog .post-content h2 {
+  font-weight: 800;
+  font-size: 22px;
+  color: #2a2a2a;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.8);
+}
