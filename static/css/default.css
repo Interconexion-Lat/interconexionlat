@@ -21,7 +21,8 @@ html, body {
 }
 
 .content {
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 150px;
   padding-left: 10%;
   padding-right: 10%;
   background-color: #f9f9f9;
